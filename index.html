@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equation Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Equation Visualizer</h1>
+        <div class="top-bar">
+            <select class="drop" id="equationDropdown">
+                <option value="">Popular Equations</option>
+                    <option value="y=x^2">y = x^2</option>
+                    <option value="y=x^3">y = x^3</option>
+                    <option value="y=2*x+1">y = 2x + 1</option>
+                    <option value="y=-x+2">y = -x + 2</option>
+                    <option value="y=sin(x)">y = sin(x)</option>
+                    <option value="y=cos(x)">y = cos(x)</option>
+                    <option value="y=tan(x)">y = tan(x)</option>
+                    <option value="y=log(x)">y = log(x)</option>
+                    <option value="y=√x">y = √x</option>
+                    <option value="y=1/x">y = 1/x</option>
+                    <option value="y=π*x">y = π*x</option>
+                    <option value="y=2^x">y = 2^x</option>
+                    <option value="y=e^x">y = e^x</option>
+                    <option value="y=x^2-4*x+4">y = x^2 - 4x + 4</option>
+                    <option value="y=(-x)^2+(4*x)+1">y = -x^2 + 4x + 1</option>
+                    <option value="y=|x|">y = |x|</option>
+                    <option value="y=sin(2*x)">y = sin(2x)</option>
+                    <option value="y=cos(2*x)">y = cos(2x)</option>
+                    <option value="y=tan(2*x)">y = tan(2x)</option>
+                    <option value="y=1/(1+e^-x)">y = 1/(1+e^(-x))</option>
+                    <option value="y=x^3-3*x+1">y = x^3 - 3x + 1</option>
+            </select>
+        </div>
+        <input type="text" id="equationInput" placeholder="Enter your equation (e.g., y=2*x+1)">
+        <div class="equation-buttons">
+            <button id="piButton">π</button>
+            <button id="expButton">^</button>
+            <button id="sqrtButton">√</button>
+            <button id="eButton">e</button>
+            <button id="logButton">log</button>
+            <button id="sinButton">sin</button>
+            <button id="cosButton">cos</button>
+            <button id="tanButton">tan</button>
+            <button id="absButton">|x|</button>
+        </div>
+        
+        <div class="equation-display" id="equationDisplay">Your equation</div>
+        <canvas id="equationCanvas" width="600" height="600"></canvas>
+    </div>
+    <div id="tooltip" class="tooltip"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

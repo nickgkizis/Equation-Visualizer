@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #5c5454;
+}
+.top-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.drop{
+    font-size: 2rem;
+}
+.top-bar:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    width: 80%;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    
+}
+input[type="text"]:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.equation-display {
+    font-size: 30px;
+    color: #333;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+canvas {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+.tooltip {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    pointer-events: none; /* Prevents the tooltip from interfering with mouse events */
+    display: none; /* Hide by default */
+    font-size: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.equation-buttons {
+    margin-bottom: 20px;
+}
+
+.equation-buttons button {
+    padding: 10px;
+    font-size: 18px;
+    margin: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.equation-buttons button:hover {
+    background-color: #e0e0e0;
+}
