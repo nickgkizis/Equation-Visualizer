@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const width = canvas.width;
     const height = canvas.height;
     const scale = 30; 
-    const lineWidth = 3; 
+    const lineWidth = 2; 
     const pointRadius = 10;
 
     let isDragging = false;
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         ctx.stroke();
 
-        ctx.font = '12px Arial';
+        ctx.font = '0px Arial';
         ctx.fillStyle = 'black';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
