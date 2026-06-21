@@ -1,2 +1,2 @@
-# Equation-Visualizer
-Visualize popular equations or create custom ones.
+# Function-Visualizer
+Visualize popular functions or create custom ones.
